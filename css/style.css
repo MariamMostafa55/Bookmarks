@@ -1,0 +1,7 @@
+mark{
+    background-color: red;
+    color: white;
+}
+.table-responsive{
+    max-height: 30vh;
+}

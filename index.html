@@ -1,0 +1,58 @@
+<html>
+    <head>
+    <link rel="icon" href="img/WhatsApp Image 2023-10-31 at 15.30.23_70dec97d.jpg">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body class="bg-info-subtle">
+        
+     <div class="container mt-lg-1">
+        <h3 class="text-secondary fw-bold">Bookmark</h3>
+        <div class="mt-2 border-top border-bottom border-dark-subtle">
+            <div class=" registerion bg-secondary mt-1 mb-1 text-center p-2">
+                <h4 class="text-white fw-bold fs-"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites</h4>
+                <label class="fw-bolder mt-3 text-white">Site Name</label>
+                <input type="text" id="namesite" placeholder="Bookmark Name" required class="form-control mt-3 w-75 m-auto">
+                <label class="fw-bold mt-3 text-white">Site URL</label>
+                <input type="url" id="urlsite" placeholder="Website URL" required class="form-control mt-3 w-75 m-auto">
+                <div class="alert alert-primary alert-danger w-50 mt-3 m-auto d-none" id="alertinput" role="alert">
+                    <strong>Enter valid input</strong>
+                </div>
+                
+                <button  id="btnsubmit" class="mt-4 bg-primary text-white border-0 p-2 border rounded ">submit</button>
+            </div>
+        </div>
+     </div>
+
+
+<input type="text" class="form-control w-25 m-auto shadow-none mt-2" placeholder="Visit your site" id="search" onkeyup="Search()">
+
+<div class="table-responsive container mt-2 w-75">
+    <table class="table ">
+        <thead class=" bg-secondary text-white">
+            <tr>
+                <th>Index</th>
+                <th >Name</th>
+                <th >Visit</th>
+                <th >Update</th>
+                <th >Delete</th>
+            </tr>        
+        </thead>
+        <tbody id="bodytr">
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
